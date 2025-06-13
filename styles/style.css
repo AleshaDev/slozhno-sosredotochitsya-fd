@@ -44,6 +44,12 @@
   gap: 3px;
 }
 
+.theme-light .header__rec-element::before,
+.theme-light .reg_elem__text {
+  display: none;
+
+}
+
 .header__rec-element::before {
   content: '';
   position: absolute;

@@ -7,5 +7,5 @@
   --subtitle-color: #000028;
   --text-color: #f1b2ce;
   --header-bg-image: url(../images/cover-image-dark.png);
-  --rec-element-display: block;
+  --rec-element-display: flex;
 }
