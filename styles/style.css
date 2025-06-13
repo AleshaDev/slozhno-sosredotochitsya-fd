@@ -23,17 +23,6 @@
   position: relative;
 }
 
-.decorated-zone::before {
-  content: '';
-  position: absolute;
-  border-inline-end: 1px solid var(--title-color, #ff0070);
-  border-block-start: 1px solid var(--title-color, #ff0070);
-  inline-size: 25px;
-  block-size: 25px;
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
-}
-
 .decorated-zone::after {
   content: '';
   position: absolute;
@@ -47,23 +36,35 @@
 
 .header__rec-element {
   position: absolute;
-  display: var(--rec-decore-display);
+  display: flex;
   color: var(--accent-color, #ff0070);
   line-height: 25px;
   inset-block-start: 10px;
-  inset-inline-end: 38px;
+  inset-inline-end: 10px;
+  gap: 3px;
 }
 
-.header__rec-element::after {
+.header__rec-element::before {
   content: '';
   position: absolute;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px currentColor;
   background-color: currentColor;
   inset-block-start: calc(50% - 4.5px);
-  inset-inline-end: -19px;
+  inset-inline-end: calc((25px - 8.5px) / 2);
   inline-size: 9px;
   block-size: 9px;
+}
+
+.header__rec-element::after {
+  content: '';
+  display: inline-block;
+  border-inline-end: 1px solid var(--title-color, #ff0070);
+  border-block-start: 1px solid var(--title-color, #ff0070);
+  inline-size: 25px;
+  block-size: 25px;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
 }
 
 .header__theme-menu {
@@ -152,7 +153,7 @@
 .content__title {
   color: var(--title-color, #ff0070);
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .reverse-column-section .content__text-block {
@@ -237,7 +238,7 @@ h4.content__subtitle {
 
   .header__rec-element {
     inset-block-start: 20px;
-    inset-inline-end: 48px;
+    inset-inline-end: 20px;
   }
 
   .header__theme-menu {
@@ -246,7 +247,7 @@ h4.content__subtitle {
 
   .header__title {
     grid-column: span 2;
-    margin-inline-start: -20px;
+    transform: translate(-20px, 0);
   }
 
   .header__description {
