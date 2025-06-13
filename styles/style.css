@@ -45,12 +45,12 @@
 }
 
 .theme-light .header__rec-element::before,
-.theme-light .reg_elem__text {
+.theme-light .reg_elem__text,
+.footer .header__rec-element::before {
   display: none;
-
 }
 
-.header__rec-element::before {
+.footer .header__rec-element::before {
   content: '';
   position: absolute;
   border-radius: 50%;
