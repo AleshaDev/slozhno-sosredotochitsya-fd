@@ -1,6 +1,8 @@
 :root {
   --base-font-family: 'IBM Plex mono';
-  --fontsize-base: 18px;
+  --font-size-base: 18px;
+  --font-size-xl: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-size-xs: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --bg-color: #000028;
   --accent-color: #ff0070;
   --title-color: #ff0070;
@@ -9,8 +11,6 @@
   --subtitle-color: #000028;
   --text-color: #f1b2ce;
   --header-bg-image: url(../images/cover-image-dark.png);
-  --fontsize-xl: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --fontsize-xs: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --text_shadow-lg: 4px 4px 0;
   --text_shadow-xs: 2px 2px 0;
 }
