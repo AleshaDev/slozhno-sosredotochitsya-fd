@@ -117,11 +117,11 @@
   font-weight: bold;
   font-size: var(--font-size-xs);
   line-height: 0.825;
-  text-shadow: var(--text_shadow-lg, 4px 4px 0) var(--accent-color, #ff0070);
+  text-shadow: var(--text-shadow-lg, 4px 4px 0) var(--accent-color, #ff0070);
 }
 
 .footer .hero-title {
-  text-shadow: var(--text_shadow-xs, 2px 2px 0) var(--accent-color, #ff0070);
+  text-shadow: var(--text-shadow-xs, 2px 2px 0) var(--accent-color, #ff0070);
 }
 
 .header__description {
@@ -189,7 +189,7 @@
 
 .text-link {
   position: relative;
-  text-shadow: var(--text_shadow-xs, 0px 4px 4px) var(--accent-color, #ff0070);
+  text-shadow: var(--text-shadow-xs, 0px 4px 4px) var(--accent-color, #ff0070);
 }
 
 .text-link:hover {
