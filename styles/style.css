@@ -267,6 +267,7 @@
 
   .column-section .content__text-block {
     grid-column: 2/4;
+    max-width: 472px;
   }
 
   .content__img-block {
