@@ -7,5 +7,26 @@
   --subtitle-color: #000028;
   --text-color: #f1b2ce;
   --header-bg-image: url(../images/cover-image-dark.png);
-  --rec-element-display: flex;
+}
+
+.theme-dark .header__rec-element {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --accent-color: #ff0070;
+    --hero-title-color: #db00ff;
+    --title-color: #ff0070;
+    --title-color-rgba: rgba(255, 0, 112, 0.4);
+    --subtitle-color: #000028;
+    --text-color: #f1b2ce;
+    --header-bg-image: url(../images/cover-image-dark.png);
+    --rec-element-display: block;
+  }
+
+  .header__rec-element {
+    display: block;
+  }
 }
