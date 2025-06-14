@@ -154,6 +154,10 @@
   font-size: var(--fontsize-base);
 }
 
+.row-section .content__text-block {
+  grid-column: 1/4;
+}
+
 .content__subtitle__normal {
   font-weight: normal;
 }
@@ -260,10 +264,6 @@
     grid-column: 2/4;
   }
 
-  .row-section {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .row-section .content__title {
     grid-column: 1/4;
     max-width: 315px;
@@ -305,6 +305,14 @@
     justify-content: center;
     justify-self: center;
     align-self: baseline;
+  }
+
+  .row-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .row-section .content__text-block {
+    grid-column: auto;
   }
 
   .hero-title {
