@@ -171,6 +171,10 @@
   margin-block-start: 20px;
 }
 
+.column-section .content__text-block {
+  padding: 0 0 0 5px;
+}
+
 .content__paragraph {
   margin-block-start: 10px;
 }
@@ -267,7 +271,6 @@
 
   .column-section .content__text-block {
     grid-column: 2/4;
-    max-width: 472px;
   }
 
   .content__img-block {
